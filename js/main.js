@@ -240,7 +240,24 @@
             }
          });
 
-    }; // end ssSwiper
+    }; 
+    
+    const mySwiper = new Swiper('.skills-swiper', {
+        slidesPerView: 4,            // Show exactly 4 slides
+        spaceBetween: 20,            // Space between slides
+        loop: true,                  // Enable loop
+        speed: 800,                  // Transition speed
+        allowTouchMove: false,       // Disable manual swiping
+        autoplay: {
+            delay: 2000,             // Time between transitions
+            disableOnInteraction: false,
+        },
+        effect: 'slide',             // Use slide effect
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    });// end ssSwiper
 
 
    /* Lightbox
@@ -355,6 +372,7 @@
         ssScrollSpy();
         ssViewAnimate();
         ssSwiper();
+        mySwiper();
         ssLightbox();
         ssAlertBoxes();
         ssMoveTo();

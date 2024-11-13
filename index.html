@@ -10,6 +10,8 @@
     <title>Jamshiya Pm</title>
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="images/mylogo.png">
+
 
     <!-- mobile specific metas
     ================================================== -->
@@ -65,9 +67,12 @@
             <div class="row wide main-nav-wrap">
                 <nav class="column lg-12 main-nav">
                     <ul>
-                        <li><a href="index.html" class="home-link">Jamshiya Pm.</a></li>
-                        <li class="current"><a href="#intro" class="smoothscroll">Profile</a></li>
+                        <!-- <li><a href="index.html" class="home-link">Jamshiya Pm.</a></li> -->
+                        <li class="current"><a href="index.html" class="home-link">Jamshiya Pm.</a></li>
+                        <!-- <li class="current"><a href="#intro" class="smoothscroll">Profile</a></li> -->
                         <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#Experience" class="smoothscroll">Experience</a></li>
+                        <li><a href="#Expertise" class="smoothscroll">Skills</a></li>
                         <li><a href="#works" class="smoothscroll">Works</a></li>
                         <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
                     </ul>
@@ -140,7 +145,7 @@
                             <h2 class="text-pretitle with-line" data-animate-el>
                                 About
                             </h2>
-                            <p class="attention-getter" data-animate-el style="text-align: justify;">
+                            <p class="attention-getter" data-animate-el>
                                 I'm a passionate developer specializing in Flutter, Android, and web development, with expertise in building robust, full-stack applications. My skills include database management, API development, and front-end design using Figma. I focus on creating seamless, cross-platform mobile experiences that engage users. Every project is an opportunity to innovate and push the boundaries of modern app development.
                             </p>
                             
@@ -153,26 +158,68 @@
                 </div> <!-- about-info -->
 
 
-                <div class="row about-expertise" data-animate-block>
+                
+
+                
+            </section> <!-- end s-about -->
+            <!-- ### Expertise
+            ================================================== -->
+            <section id="Expertise" class="s-Expertise target-section">
+                <div class="row about-expertise">
                     <div class="column lg-12">
-
-                        <h2 class="text-pretitle" data-animate-el>Expertise</h2>
-
-                        <ul class="skills-list h1" data-animate-el>
-                            <li>Flutter</li>
-                            <li>Cross-platform Mobile Development</li>
-                            <li>UI/UX Design</li>
-                            <li>API Development</li>
-                            <li>Database Management</li>
-                            <li>State Management (Provider, GetX, Riverpod)</li>
-                            <li>Figma Prototyping</li>
-                            <li>JWT Authentication</li>
-                            <li>CI/CD and DevOps</li>
-                        </ul>
-
+                        <h2 class="text-pretitle">Expertise</h2>
+                        <div class="swiper skills-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide skill-item">
+                                    <img src="images/flutter-icon.png" alt="Flutter" class="skill-icon">
+                                    <p>Flutter</p>
+                                </div>
+                                <div class="swiper-slide skill-item">
+                                    <img src="images/api_icon.png" alt="API Development" class="skill-icon">
+                                    <p>API Development</p>
+                                </div>
+                                <div class="swiper-slide skill-item">
+                                    <img src="images/ui-ux-icon.png" alt="UI/UX Design" class="skill-icon">
+                                    <p>UI/UX Design</p>
+                                </div>
+                                 <!-- <div class="swiper-slide skill-item">
+                                    <img src="images/database-management-icon.png" alt="Database Management" class="skill-icon">
+                                    <p>Database Management</p>
+                                </div> -->
+                                <!--<div class="swiper-slide skill-item">
+                                    <img src="images/provider-icon.png" alt="Provider" class="skill-icon">
+                                    <p>Provider</p>
+                                </div>
+                                <div class="swiper-slide skill-item">
+                                    <img src="images/getx-icon.png" alt="GetX" class="skill-icon">
+                                    <p>GetX</p>
+                                </div>
+                                <div class="swiper-slide skill-item">
+                                    <img src="images/riverpode-icon.png" alt="Riverpod" class="skill-icon">
+                                    <p>Riverpod</p>
+                                </div> -->
+                                <div class="swiper-slide skill-item">
+                                    <img src="images/figma-icon.png" alt="Figma Prototyping" class="skill-icon">
+                                    <p>Figma Prototyping</p>
+                                </div>
+                                <div class="swiper-slide skill-item">
+                                    <img src="images/jwt-icon.png" alt="JWT Authentication" class="skill-icon">
+                                    <p>JWT Authentication</p>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
-                </div> <!-- end about-expertise -->
+                </div>
+            </section>
+            
+            
+            
+            
 
+            <!-- ### Experience/education
+            ================================================== -->
+            <section id="Experience" class="s-Experience target-section">
 
                 <div class="row about-timelines" data-animate-block>
 
@@ -273,7 +320,8 @@
 
                 </div> <!-- end about-timelines -->
 
-            </section> <!-- end s-about -->
+
+            </section> <!-- end Experience/education -->
 
 
             <!-- ### works
@@ -504,97 +552,10 @@
 
                 </div> <!-- end works-portfolio -->
 
-
-                <div class="row testimonials">
-                    <div class="column lg-12" data-animate-block>
-
-                        <div class="swiper-container testimonial-slider" data-animate-el>
-
-                            <div class="swiper-wrapper">
-
-                                <div class="testimonial-slider__slide swiper-slide">
-                                    <div class="testimonial-slider__author">
-                                        <img src="images/avatars/user-02.jpg" alt="Author image"
-                                            class="testimonial-slider__avatar">
-                                        <cite class="testimonial-slider__cite">
-                                            <strong>Tim Cook</strong>
-                                            <span>CEO, Apple</span>
-                                        </cite>
-                                    </div>
-                                    <p>
-                                        Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas
-                                        tempore rem.
-                                        Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores
-                                        quaerat fuga rem nihil nostrum.
-                                        Laudantium quia consequatur molestias delectus culpa.
-                                    </p>
-                                </div> <!-- end testimonial-slider__slide -->
-
-                                <div class="testimonial-slider__slide swiper-slide">
-                                    <div class="testimonial-slider__author">
-                                        <img src="images/avatars/user-03.jpg" alt="Author image"
-                                            class="testimonial-slider__avatar">
-                                        <cite class="testimonial-slider__cite">
-                                            <strong>Sundar Pichai</strong>
-                                            <span>CEO, Google</span>
-                                        </cite>
-                                    </div>
-                                    <p>
-                                        Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos
-                                        repellat voluptas animi adipisci.
-                                        Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium
-                                        perspiciatis.
-                                        Quasi voluptas eius distinctio. Atque eos maxime.
-                                    </p>
-                                </div> <!-- end testimonial-slider__slide -->
-
-                                <div class="testimonial-slider__slide swiper-slide">
-                                    <div class="testimonial-slider__author">
-                                        <img src="images/avatars/user-01.jpg" alt="Author image"
-                                            class="testimonial-slider__avatar">
-                                        <cite class="testimonial-slider__cite">
-                                            <strong>Satya Nadella</strong>
-                                            <span>CEO, Microsoft</span>
-                                        </cite>
-                                    </div>
-                                    <p>
-                                        Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil
-                                        ea quia nesciunt. Ducimus aut sed ipsam.
-                                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas
-                                        eius distinctio.
-                                        Voluptatem dignissimos ut.
-                                    </p>
-                                </div> <!-- end testimonial-slider__slide -->
-
-                                <div class="testimonial-slider__slide swiper-slide">
-                                    <div class="testimonial-slider__author">
-                                        <img src="images/avatars/user-06.jpg" alt="Author image"
-                                            class="testimonial-slider__avatar">
-                                        <cite class="testimonial-slider__cite">
-                                            <strong>Jeff Bezos</strong>
-                                            <span>CEO, Amazon</span>
-                                        </cite>
-                                    </div>
-                                    <p>
-                                        Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel
-                                        dui. In ac felis
-                                        quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at
-                                        corrupti expedita voluptas odit.
-                                        Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                                    </p>
-                                </div> <!-- end testimonial-slider__slide -->
-
-                            </div> <!-- end swiper-wrapper -->
-
-                            <div class="swiper-pagination"></div>
-
-                        </div> <!-- end swiper-container -->
-
-                    </div> <!-- end column -->
-                </div> <!-- end row testimonials -->
-
+                
+                
             </section> <!-- end s-works -->
-
+            
 
             <!-- ### contact
             ================================================== -->
@@ -616,7 +577,7 @@
                     <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
                         <h3 class="text-pretitle">Reach me at</h3>
                         <p class="contact-links">
-                            <a href="mailto:jamshimujeeb7@gmail.com" class="mailtoui">jamshimujeeb7@gmail.com</a> <br>
+                            <a href="mailto:jamshimujeeb7@gmail.com" class="mailtoui">jamshimujeeb7@gmail.com</a><br>
                             <a href="tel:+1975432345">+91-8086917818</a>
                         </p>
                     </div>
@@ -624,7 +585,7 @@
                         <h3 class="text-pretitle">Social</h3>
                         <ul class="contact-social">
                             <li><a href="https://www.linkedin.com/in/jamshiya-pm">LinkedIn</a></li>
-                            <li><a href="jamshimujeeb7@gmail.com">Mail</a></li>
+                            <li><a href="mailto:jamshimujeeb7@gmail.com" class="mailtoui">Mail</a></li>
                             <li><a href="https://github.com/Jamshiya-Pm">Github</a></li>
                         </ul>
                     </div>
