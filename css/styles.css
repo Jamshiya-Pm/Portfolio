@@ -3620,6 +3620,10 @@ img.u-pull-left {
     margin-top: -.2rem;
 }
 
+.about-info__text {
+    margin-left: 20px; /* This will also work, adjust as needed */
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * about
