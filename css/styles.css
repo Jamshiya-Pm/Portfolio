@@ -1,7 +1,5 @@
 /* =================================================================== 
- * Luther Main Stylesheet
- * Template Ver. 1.0.0
- * 02-15-2021
+ * jamshiya Main Stylesheet
  * ------------------------------------------------------------------
  *
  * TOC:
@@ -517,7 +515,7 @@ body {
 }
 
 body {
-    background-color: var(--color-body);
+    background-color: var(--color-loader);
     -webkit-overflow-scrolling: touch;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -1332,7 +1330,7 @@ h6,
 .h6 {
     font-family: var(--font-2);
     font-weight: 400;
-    color: var(--color-text-dark);
+    color: var(--color-black);
     font-variant-ligatures: common-ligatures;
     text-rendering: optimizeLegibility;
 }
@@ -1611,7 +1609,7 @@ hr.fancy::before {
     font-weight: 300;
     font-size: 2rem; /* Default font size for smaller screens */
     line-height: 1.5;
-    color: var(--color-text-dark);
+    color: var(--color-black);
     padding: 1rem;
     text-align: justify;
 }
@@ -2103,8 +2101,8 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-    background-color: var(--color-btn-hover);
-    border-color: var(--color-btn-hover);
+    background-color: var(--color-1);
+    border-color: var(--color-1);
     color: var(--color-btn-hover-text);
     outline: 0;
 }
@@ -2717,7 +2715,7 @@ img.u-pull-left {
     font-family: var(--font-1);
     font-size: var(--text-sm);
     font-weight: 400;
-    color: var(--color-white);
+    color: var(--color-black);
     text-transform: uppercase;
     letter-spacing: .3em;
     margin-top: 0;
@@ -2737,7 +2735,8 @@ img.u-pull-left {
     display: block;
     height: 1px;
     width: 4rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: var(--color-black);
     position: absolute;
     top: 50%;
     left: 0;
@@ -2758,7 +2757,7 @@ img.u-pull-left {
     --mailtoui-modal-head-bgcolor: var(--color-gray-18);
     --mailtoui-modal-head-title-color: white;
     --mailtoui-modal-body-bgcolor: var(--color-gray-11);
-    --mailtoui-button-bgcolor: rgba(255, 255, 255, .04);
+    --mailtoui-button-bgcolor: rgba(255, 254, 254, 0.04);
     --mailtoui-button-text-color: white;
     --mailtoui-button-bgcolor-hover: var(--color-1-dark);
     --mailtoui-button-text-color-hover: black;
@@ -3296,7 +3295,7 @@ img.u-pull-left {
 
 .intro-social a:focus,
 .intro-social a:hover {
-    color: white;
+    color:var(--color-1-darker);
 }
 
 /* --------------------------------------------------------------------
@@ -3320,7 +3319,7 @@ img.u-pull-left {
 }
 
 .intro-scrolldown svg path {
-    fill: white;
+    fill: rgb(4, 4, 4);
     transition: all .3s ease-in-out;
 }
 
@@ -3568,7 +3567,7 @@ img.u-pull-left {
     display: block;
     width: 1px;
     height: calc(100% - var(--timeline-top-adjust));
-    background-color: var(--color-border);
+    background-color: var(--color-1-dark);
     position: absolute;
     top: var(--timeline-top-adjust);
     left: 3px;
