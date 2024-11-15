@@ -3711,7 +3711,7 @@ img.u-pull-left {
     display: block;
     width: 100%;
     padding-left: calc(5.5 * var(--space));
-    color: white;
+    color:var(--color-1-darker);
     transition-duration: .5s;
     position: relative;
 }
@@ -3862,18 +3862,23 @@ img.u-pull-left {
 /* ------------------------------------------------------------------- 
  * ## modal popup
  * ------------------------------------------------------------------- */
-.modal-popup {
+ .modal-popup {
     max-width: 680px;
+    width: 90%; /* Added for responsiveness */
     background-color: white;
     font-size: calc(var(--text-size) * 0.9447);
     line-height: var(--vspace-0_875);
     color: rgba(0, 0, 0, 0.75);
     overflow-y: auto;
     position: relative;
+    margin: 20px auto; /* Added for better centering */
 }
 
 .modal-popup img {
+    width: 100%; /* Make image responsive */
+    height: auto;
     margin-bottom: var(--vspace-0_75);
+    object-fit: cover;
 }
 
 .modal-popup h5 {
@@ -3930,7 +3935,6 @@ img.u-pull-left {
 .modal-popup__links {
     display: flex;
     gap: 10px;
-    /* Adds space between the links */
     position: absolute;
     top: var(--vspace-1);
     left: var(--vspace-1);
@@ -3945,6 +3949,7 @@ img.u-pull-left {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
+    white-space: nowrap; /* Prevent link text from wrapping */
 }
 
 .modal-popup__details:focus,
@@ -3953,6 +3958,44 @@ img.u-pull-left {
     color: white;
 }
 
+/* Media Queries for Modal Popup */
+@media screen and (max-width: 768px) {
+    .modal-popup {
+        width: 85%;
+        margin: 15px auto;
+    }
+
+    .modal-popup__desc {
+        padding: 0 var(--vspace-1) var(--vspace-0_25);
+    }
+
+    .modal-popup__links {
+        position: static; /* Change from absolute to static positioning */
+        padding: var(--vspace-1);
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-popup {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .modal-popup__desc {
+        padding: 0 var(--vspace-0_75) var(--vspace-0_25);
+    }
+
+    .modal-popup__links {
+        padding: var(--vspace-0_75);
+    }
+
+    .modal-popup__details {
+        font-size: calc(var(--text-xs) * 0.95);
+        padding: 0 1rem;
+    }
+}
 /* ------------------------------------------------------------------- 
  * ## testimonials
  * ------------------------------------------------------------------- */
